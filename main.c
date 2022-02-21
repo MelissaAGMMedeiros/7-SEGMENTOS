@@ -36,6 +36,8 @@ void main(void)
                 
             case 10:
                 ++cont;
+                if (cont > 9)
+                    cont = 0;
                 estado = 11;
                 break;
                 
@@ -45,7 +47,11 @@ void main(void)
                 break;
                 
             case 20:
-                --cont;
+                
+                if ( cont != 0)
+                    --cont;
+                else 
+                    cont = 9;
                 estado = 21;
                 break;
                 
